@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khalid Portfolio</title>
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50">
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-10 bg-white shadow-md">
+    <div class="container flex items-center justify-between px-4 py-3 mx-auto">
+      <a href="#" class="text-xl font-bold text-blue-600">Logo</a>
+      <div class="hidden space-x-8 md:flex md:absolute md:left-1/2 md:transform md:-translate-x-1/2">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </div>
+      <button class="md:hidden">☰ Menu</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="flex items-center justify-center min-h-screen text-white bg-gradient-to-r from-blue-500 to-indigo-600">
+    <div class="text-center opacity-0 animate-fadeIn">
+      <h1 class="mb-4 text-4xl font-bold md:text-6xl">Welcome to My Site</h1>
+      <p class="mb-8 text-xl md:text-2xl">A simple landing page built with Tailwind CSS</p>
+      <button class="px-6 py-3 font-semibold text-blue-600 transition bg-white rounded-lg hover:bg-gray-100">Get Started</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container px-4 mx-auto">
+      <h2 class="mb-12 text-3xl font-bold text-center">About Me</h2>
+      <div class="flex flex-col items-center gap-8 md:flex-row">
+        <div class="md:w-1/2">
+          <img src="assets/myphoto.jpg" alt="About me" class="shadow-xl w-250 h-250 hrounded-lg">
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="mb-4 text-2xl font-semibold">Who I Am</h3>
+          <p class="mb-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+          <p class="text-gray-600">Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-100">
+    <div class="container px-4 mx-auto">
+      <h2 class="mb-12 text-3xl font-bold text-center">My Projects</h2>
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <!-- Project 1 -->
+        <div class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-md hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-semibold">Project One</h3>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 text-xs text-blue-800 bg-blue-100 rounded">HTML</span>
+              <span class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded">CSS</span>
+              <span class="px-2 py-1 text-xs text-yellow-800 bg-yellow-100 rounded">JavaScript</span>
+            </div>
+            <p class="mb-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="font-medium text-blue-600 hover:text-blue-800">
+              View Project <i class="ml-1 fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-md hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-semibold">Project Two</h3>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 text-xs text-purple-800 bg-purple-100 rounded">React</span>
+              <span class="px-2 py-1 text-xs text-gray-800 bg-gray-100 rounded">Node.js</span>
+            </div>
+            <p class="mb-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="font-medium text-blue-600 hover:text-blue-800">
+              View Project <i class="ml-1 fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-md hover:shadow-xl">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full">
+          <div class="p-6">
+            <h3 class="mb-2 text-xl font-semibold">Project Three</h3>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="px-2 py-1 text-xs text-red-800 bg-red-100 rounded">Python</span>
+              <span class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded">Django</span>
+            </div>
+            <p class="mb-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="font-medium text-blue-600 hover:text-blue-800">
+              View Project <i class="ml-1 fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer/Contact Section -->
+  <footer id="contact" class="py-12 text-white bg-gray-800">
+    <div class="container px-4 mx-auto">
+      <h2 class="mb-8 text-3xl font-bold text-center">Contact Me</h2>
+      <div class="flex flex-col gap-12 md:flex-row">
+        <!-- Contact Form -->
+        <div class="md:w-1/2">
+          <form class="space-y-4">
+            <div>
+              <label for="name" class="block mb-1">Name</label>
+              <input type="text" id="name" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+              <label for="email" class="block mb-1">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+              <label for="message" class="block mb-1">Message</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+            <button type="submit" class="w-full px-6 py-3 font-semibold transition bg-blue-600 rounded-lg hover:bg-blue-700">Send Message</button>
+          </form>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="md:w-1/2">
+          <h3 class="mb-4 text-xl font-semibold">Get in Touch</h3>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <a href="mailto:your@email.com" class="flex items-center transition hover:text-blue-400">
+                <i class="mr-4 text-2xl fas fa-envelope"></i>
+                <span>your@email.com</span>
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a href="https://linkedin.com/in/yourprofile" target="_blank" class="flex items-center transition hover:text-blue-400">
+                <i class="mr-4 text-2xl fab fa-linkedin"></i>
+                <span>LinkedIn Profile</span>
+              </a>
+            </div>
+            <div class="flex items-center">
+              <a href="https://wa.me/yournumber" target="_blank" class="flex items-center transition hover:text-blue-400">
+                <i class="mr-4 text-2xl fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6 mt-12 text-center border-t border-gray-700">
+        <p>© 2023 My Website. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation classes */
+.animate-fadeIn {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.section-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Project card animations */
+.project-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  transition: max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#mobile-menu.menu-open {
+  max-height: 200px;
+}
+
+/* Custom utilities */
+.text-justify {
+  text-align: justify;
+}
+
+/* Custom color variants - only define if not using Tailwind's built-in colors */
+.bg-blue-100 { background-color: #dbeafe; }
+.bg-green-100 { background-color: #d1fae5; }
+.bg-yellow-100 { background-color: #fef3c7; }
